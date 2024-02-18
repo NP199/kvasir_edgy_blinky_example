@@ -1,12 +1,8 @@
 #include "ApplicationConfig.hpp"
-#include "aglio/packager.hpp"
-#include "aglio/remote_fmt.hpp"
 #include "cmake_git_version/version.hpp"
 #include "kvasir/Util/StaticVector.hpp"
 #include "kvasir/Util/using_literals.hpp"
 #include "remote_fmt/remote_fmt.hpp"
-
-using packager = aglio::Packager<aglio::CrcConfig<Crc>>;
 
 int main() {
     UC_LOG_D("{}", CMakeGitVersion::FullVersion);
